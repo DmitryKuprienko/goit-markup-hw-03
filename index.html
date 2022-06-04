@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
   <body class="page">
@@ -49,107 +53,119 @@
     <main>
       <!--шапка-->
       <section class="section main">
-        <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="main btr">Заказать услугу</button>
+        <div class="coneiner">
+          <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="main btr">Заказать услугу</button>
+        </div>
       </section>
       <!--особености услуг-->
       <section class="section">
-        <h2 class="visually-hidden">наши особливости</h2>
-        <ul class="description list">
-          <li class="description item">
-            <h3 class="description title">Внимание к деталям</h3>
-            <p class="disc-text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li class="description item">
-            <h3 class="description title">Пунктуальность</h3>
-            <p class="disc-text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li class="description item">
-            <h3 class="description title">Планирование</h3>
-            <p class="disc-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li class="description item">
-            <h3 class="description title">Современные технологии</h3>
-            <p class="disc-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <h2 class="visually-hidden">наши особливости</h2>
+          <ul class="description list">
+            <li class="description item">
+              <h3 class="description title">Внимание к деталям</h3>
+              <p class="disc-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="description item">
+              <h3 class="description title">Пунктуальность</h3>
+              <p class="disc-text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="description item">
+              <h3 class="description title">Планирование</h3>
+              <p class="disc-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="description item">
+              <h3 class="description title">Современные технологии</h3>
+              <p class="disc-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--чем занимаемся-->
       <section class="section what-doing">
-        <h2 class="section titele">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li class="link">
-            <img
-              class="imeges writing"
-              src="./images/code-writing.jpg"
-              alt="розробка програмного забезпечення"
-            />
-          </li>
-          <li class="link">
-            <img
-              class="imeges fron"
-              src="./images/create-front-end.jpg"
-              alt="тестування мобільного додатку"
-            />
-          </li>
-          <li class="link">
-            <img
-              class="imeges tablet"
-              src="./images/tablet.jpg"
-              alt="налаштування палітри кольорів"
-            />
-          </li>
-        </ul>
+        <div class="conteiner">
+          <h2 class="section titele">Чем мы занимаемся</h2>
+          <ul class="list">
+            <li class="link">
+              <img
+                class="imeges writing"
+                src="./images/code-writing.jpg"
+                alt="розробка програмного забезпечення"
+              />
+            </li>
+            <li class="link">
+              <img
+                class="imeges fron"
+                src="./images/create-front-end.jpg"
+                alt="тестування мобільного додатку"
+              />
+            </li>
+            <li class="link">
+              <img
+                class="imeges tablet"
+                src="./images/tablet.jpg"
+                alt="налаштування палітри кольорів"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Наша команда-->
       <section class="section team">
-        <h2 class="section titele">Наша команда</h2>
-        <ul class="team list">
-          <li class="team item">
-            <img
-              class="team-imeges igor"
-              src="./images/igor.jpg"
-              alt="foto-igor"
-            />
-            <h3 class="team-titel">Игорь Демьяненко</h3>
-            <p lang="en" class="team-text">Product Designer</p>
-          </li>
-          <li class="team item">
-            <img class="team-imeges" src="./images/Olga.jpg" alt="foto-olga" />
-            <h3 class="team-titel">Ольга Репина</h3>
-            <p lang="en" class="team-text">Frontend Developer</p>
-          </li>
-          <li class="team item">
-            <img
-              class="team-imeges"
-              src="./images/Nikolay.jpg"
-              alt="foto-Nikolay"
-            />
-            <h3 class="team-titel">Николай Тарасов</h3>
-            <p lang="en" class="team-text">Marketing</p>
-          </li>
-          <li class="team item">
-            <img
-              class="team-imeges michael"
-              src="./images/Michael.jpg"
-              alt="foto-Michael"
-            />
-            <h3 class="team-titel">Михаил Ермаков</h3>
-            <p lang="en" class="team-text">UI Designer</p>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <h2 class="section titele">Наша команда</h2>
+          <ul class="team list">
+            <li class="team item">
+              <img
+                class="team-imeges igor"
+                src="./images/igor.jpg"
+                alt="foto-igor"
+              />
+              <h3 class="team-titel">Игорь Демьяненко</h3>
+              <p lang="en" class="team-text">Product Designer</p>
+            </li>
+            <li class="team item">
+              <img
+                class="team-imeges"
+                src="./images/Olga.jpg"
+                alt="foto-olga"
+              />
+              <h3 class="team-titel">Ольга Репина</h3>
+              <p lang="en" class="team-text">Frontend Developer</p>
+            </li>
+            <li class="team item">
+              <img
+                class="team-imeges"
+                src="./images/Nikolay.jpg"
+                alt="foto-Nikolay"
+              />
+              <h3 class="team-titel">Николай Тарасов</h3>
+              <p lang="en" class="team-text">Marketing</p>
+            </li>
+            <li class="team item">
+              <img
+                class="team-imeges michael"
+                src="./images/Michael.jpg"
+                alt="foto-Michael"
+              />
+              <h3 class="team-titel">Михаил Ермаков</h3>
+              <p lang="en" class="team-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 

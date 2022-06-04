@@ -20,7 +20,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  background-color: var(--main-light);
+  
 }
 
 .list .link,
@@ -88,8 +88,9 @@ body {
   background: var(--background-light);
 } */
 .section.main {
-  background-color: var(--background-dark);
+ 
   height: 600px;
+  background-color: var(--background-dark);
 }
 
 .main-title {
@@ -99,7 +100,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--main-light);
-  padding: 200px 452px 40px 452px;
+
 }
 
 .main .btr {
@@ -112,7 +113,8 @@ body {
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-light);
-  background: var(--acsent-cololr);
+  background-color: var(--acsent-cololr);
+  
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -191,7 +193,7 @@ body {
   height: 368px;
   margin-right: 30px;
   text-align: center;
-  background-color: var(--main-light);
+ 
 }
 .team-imeges .michael {
   margin-right: 0;

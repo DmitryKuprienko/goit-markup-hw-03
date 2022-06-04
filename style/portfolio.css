@@ -127,6 +127,7 @@ body {
 .section.main {
   display: flex;
   flex-wrap: wrap;
+  
 }
 .section.item {
   width: 370px;
