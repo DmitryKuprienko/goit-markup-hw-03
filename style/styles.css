@@ -15,12 +15,21 @@
   --background-light: #e5e5e5;
   --background-grey: #f5f4fa;
 }
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: var(--main-text);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  
 }
 
 .list .link,
@@ -88,7 +97,6 @@ body {
   background: var(--background-light);
 } */
 .section.main {
- 
   height: 600px;
   background-color: var(--background-dark);
 }
@@ -100,7 +108,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--main-light);
-
 }
 
 .main .btr {
@@ -114,23 +121,9 @@ body {
   line-height: 1.88;
   color: var(--main-light);
   background-color: var(--acsent-cololr);
-  
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-/* особености услуг */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .description.title {
@@ -193,7 +186,6 @@ body {
   height: 368px;
   margin-right: 30px;
   text-align: center;
- 
 }
 .team-imeges .michael {
   margin-right: 0;

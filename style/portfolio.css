@@ -15,7 +15,18 @@
   --background-light: #e5e5e5;
   --background-grey: #f5f4fa;
 }
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
   font-family: var(--main-text);
   font-size: 14px;
   line-height: 1.14;
@@ -127,7 +138,6 @@ body {
 .section.main {
   display: flex;
   flex-wrap: wrap;
-  
 }
 .section.item {
   width: 370px;
