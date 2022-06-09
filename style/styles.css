@@ -60,15 +60,30 @@ p {
 /* container site - контейнери сайта */
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  /* УДАЛИТЬ */
   background-color: aqua;
   outline: 2px solid tomato;
 }
 
 /* header site -шапка сайта  */
+.header {
+  background-color: var(--main-light);
+}
+.container.site-nav {
+  display: flex;
+  align-items: center;
+}
 
 /* nav site -навигатор сайта */
+
+.site.nav {
+  display: flex;
+  align-items: center;
+}
 
 /*logo-site логоти сайта*/
 .logo {
@@ -83,19 +98,38 @@ p {
   color: var(--acсent-color);
 }
 
-.nav.link,
-.contact.link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--main-text-color);
+.nav.list {
+  display: flex;
+  margin-left: 93px;
 }
 
-.contact.link {
+/* .nav.item:not(:last-child),
+.contacts.item:not(:last-child) {
+  margin-right: 50px;
+} */
+.nav.item + .item,
+.contacts.item + .item {
+  margin-left: 50px;
+}
+
+.nav.link,
+.contacts.link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-text-color);
+  font-weight: 500;
+}
+
+.contacts.link {
   color: var(--main-text-grey);
 }
 /* контакти */
-.cotacts.list {
+.contacts.list {
+  display: flex;
+  margin-left: auto;
+
   font-weight: 500;
 }
 .nav.link.current {
@@ -108,8 +142,8 @@ p {
 .nav .link:active,
 .footer-address .link:hover,
 .footer-address .link:focus,
-.contact.link:hover,
-.contact.link:focus {
+.contacts.link:hover,
+.contacts.link:focus {
   color: var(--acсent-color);
 }
 
@@ -117,23 +151,24 @@ p {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  /* УДАЛИТЬ */
   outline: 2px solid tomato;
 }
 
 .section.main {
   text-align: center;
+  background-color: var(--background-dark);
 }
 
 .main-title {
   margin-bottom: 30px;
-  outline: 2px solid rgb(0, 255, 42);
-  background-color: tomato;
+
+  color: var(--main-light);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
   text-transform: uppercase;
-  color: var(--main-light);
 }
 
 .main .btr {
@@ -141,18 +176,32 @@ p {
   height: 50px;
   text-align: center;
 
+  color: var(--main-light);
+  background-color: var(--acсent-color);
   font-family: var(--main-text);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--main-light);
-  background-color: var(--acсent-color);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
 /* service features-особености услуги*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .description.title {
   margin-bottom: 10px;
 
@@ -160,12 +209,11 @@ p {
   font-size: 14px;
   line-height: 1.14;
 }
+.description.list {
+  display: flex;
+}
 
 .disc-text {
-  padding-right: 30px;
-  width: 270px;
-  height: 75px;
-
   line-height: 1.71;
   color: var(--main-text-grey);
 }
