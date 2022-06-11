@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 /* перемение сайта*/
 
 :root {
@@ -14,15 +22,6 @@
   --background-dark: #2f303a;
   --background-light: #e5e5e5;
   --background-grey: #f5f4fa;
-}
-
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 body {
@@ -65,8 +64,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   /* УДАЛИТЬ */
-  /* background-color: yellow;
-  outline: 2px solid blue; */
+  background-color: yellow;
+  outline: 2px solid blue;
 }
 
 /* header site -шапка сайта  */
@@ -213,10 +212,12 @@ p {
 
 .section.item {
   width: 370px;
+
   margin-bottom: 30px;
   margin-right: 30px;
-  border: 1px solid #eeeeee;
 
+  border: 1px solid #eeeeee;
+  border: -1px;
   /* background-color: var(--main-light); */
 }
 
@@ -227,12 +228,16 @@ p {
 .section.item:nth-child(3n) {
   margin-right: 0;
 }
+.section-imeg {
+  margin-bottom: 20px;
+}
 
 /* title-заголовки */
 
 .item-title {
   margin-left: 24px;
   margin-right: 24px;
+  margin-bottom: 4px;
   padding-right: 10px;
 
   font-weight: 700;

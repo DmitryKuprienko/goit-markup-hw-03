@@ -65,8 +65,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   /* УДАЛИТЬ */
-  /* background-color: aqua;
-  outline: 2px solid blue; */
+  background-color: aqua;
+  outline: 2px solid blue;
 }
 
 /* header site -шапка сайта  */
@@ -216,6 +216,7 @@ p {
 .description.item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
+  align-items: flex-end;
 }
 .description.item:last-child {
   margin-right: 0;
