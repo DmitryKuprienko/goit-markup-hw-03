@@ -33,7 +33,8 @@ body {
 }
 
 .list .link,
-.list .item {
+.list .item,
+a {
   text-decoration: none;
   font-style: normal;
 }
@@ -65,8 +66,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   /* УДАЛИТЬ */
-  background-color: aqua;
-  outline: 2px solid blue;
+  /* background-color: aqua;
+  outline: 2px solid blue; */
 }
 
 /* header site -шапка сайта  */
@@ -156,6 +157,9 @@ p {
 }
 
 .section.main {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
   background-color: var(--background-dark);
 }
@@ -261,7 +265,7 @@ p {
 
 .team.images {
   width: 270px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .team.list {
   display: flex;
@@ -270,7 +274,10 @@ p {
   margin-right: 30px;
   text-align: center;
 }
-
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team .team-title {
   margin-bottom: 10px;
 
@@ -282,7 +289,7 @@ p {
 }
 
 .team-text {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 
   color: var(--main-text-grey);
 }
