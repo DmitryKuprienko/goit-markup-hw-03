@@ -1,11 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 /* перемение сайта*/
 
 :root {
@@ -14,7 +6,7 @@ html {
   --logo-text: 'Raleway', sans-serif;
   /* цвета текста */
   --main-text-color: #212121;
-  --acсent-color: #2196f3;
+  --accent-color: #2196f3;
   --main-text-grey: #757575;
   --main-light: #ffffff;
 
@@ -22,6 +14,14 @@ html {
   --background-dark: #2f303a;
   --background-light: #e5e5e5;
   --background-grey: #f5f4fa;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -96,7 +96,7 @@ p {
 }
 
 .logo-web {
-  color: var(--acсent-color);
+  color: var(--accent-color);
 }
 
 .nav.list {
@@ -134,7 +134,7 @@ p {
   font-weight: 500;
 }
 .nav.link.current {
-  color: var(--acсent-color);
+  color: var(--accent-color);
 }
 
 /* hover i focus */
@@ -145,7 +145,7 @@ p {
 .footer-address .link:focus,
 .contacts.link:hover,
 .contacts.link:focus {
-  color: var(--acсent-color);
+  color: var(--accent-color);
 }
 
 .visually-hidden {
@@ -172,7 +172,7 @@ p {
 
 /* filter buttons-кнопки фільтра */
 .filter {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .button.list {
@@ -198,9 +198,9 @@ p {
   border: 0;
   border-radius: 4px;
 }
-.btn:hover,
-.btn:focus,
-.btn:active {
+.filter .btn:hover,
+.filter .btn:focus,
+.filter .btn:active {
   background-color: var(--accent-color);
   color: var(--main-light);
 }
@@ -271,6 +271,9 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-googl a {
   color: var(--main-light);
